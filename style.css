@@ -22,12 +22,12 @@ header {
 }
 
 header h1 {
-    color: #0f766e;
+    color: #024873;
     margin-bottom: 10px;
 }
 
 header p {
-    color: #64748b;
+    color: #343b46;
     line-height: 1.6;
 }
 
@@ -50,14 +50,14 @@ header p {
     text-align: center;
     padding: 10px 4px;
     background: #f8fafc;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #b4c6de;
     border-radius: 12px;
 }
 
 .relogio-container h3 {
     font-size: 14px;
     margin-bottom: 10px;
-    color: #475569;
+    color: #000000;
 }
 
 .relogio {
@@ -75,7 +75,7 @@ header p {
 }
 
 .relogio:focus-visible {
-    outline: 3px solid #0f766e;
+    outline: 3px solid #0477BF;
     outline-offset: 3px;
 }
 
@@ -88,14 +88,14 @@ header p {
 .resultado {
     text-align: center;
     background: #ecfdf5;
-    border: 1px solid #a7f3d0;
+    border: 1px solid #7579aa;
     border-radius: 12px;
     padding: 25px 15px;
 }
 
 .resultado h2 {
     font-size: 18px;
-    color: #065f46;
+    color: #024873;
     margin-bottom: 10px;
 }
 
@@ -103,7 +103,7 @@ header p {
     font-size: clamp(36px, 8vw, 48px);
     font-weight: bold;
     letter-spacing: 6px;
-    color: #047857;
+    color: #0477BF;
     font-variant-numeric: tabular-nums;
 }
 
@@ -134,7 +134,7 @@ button {
     padding: 12px 20px;
     border: none;
     border-radius: 8px;
-    background: #0f766e;
+    background: #0477BF;
     color: white;
     font-size: 15px;
     font-weight: bold;
@@ -143,7 +143,7 @@ button {
 }
 
 button:hover {
-    background: #115e59;
+    background: #1e5577;
 }
 
 button:focus-visible {
@@ -160,7 +160,7 @@ button:focus-visible {
 
 .instrucoes h2 {
     margin-bottom: 15px;
-    color: #0f766e;
+    color: #0477BF;
 }
 
 .instrucoes ol {
@@ -208,3 +208,8 @@ button:focus-visible {
         letter-spacing: 3px;
     }
 }
+
+/*
+#024873
+#0477BF
+*/
