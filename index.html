@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Simulador de Medidor de Energia</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header>
+            <h1>⚡ Medidor de Energia</h1>
+            <p>
+                Ajuste os ponteiros para reproduzir a posição
+                do seu medidor de energia elétrica.
+            </p>
+        </header>
+
+        <section class="medidor">
+            <div class="relogios" id="relogios">
+
+                <!-- Os quatro relógios criados pelo JavaScript -->
+
+            </div>
+
+            <div class="resultado">
+
+                <h2>Leitura do medidor</h2>
+
+                <div class="leitura" id="leitura">
+                    0000
+                </div>
+
+                <p>kWh - quilowatt-hora</p>
+
+                <div id="mensagem" class="mensagem">
+                    Arraste os ponteiros para ajustar a leitura.
+                </div>
+
+            </div>
+
+            <div class="acoes">
+
+                <button id="btnReiniciar" type="button">
+                    Reiniciar
+                </button>
+
+                <button id="btnExemplo" type="button">
+                    Carregar exemplo
+                </button>
+
+            </div>
+
+        </section>
+
+        <section class="instrucoes">
+
+            <h2>Como fazer a leitura?</h2>
+
+            <ol>
+                <li>
+                    Observe os quatro mostradores do medidor.
+                </li>
+
+                <li>
+                    Quando o ponteiro estiver entre dois números,
+                    considere o número que ele acabou de ultrapassar,
+                    respeitando o sentido de rotação.
+                </li>
+
+                <li>
+                    Se o ponteiro parecer estar exatamente sobre
+                    um número, confira o mostrador imediatamente
+                    à direita.
+                </li>
+
+                <li>
+                    A leitura exibida representa a energia acumulada
+                    em kWh, e não necessariamente o consumo do mês.
+                </li>
+            </ol>
+
+            <p class="aviso">
+                Atenção: os medidores podem variar conforme o modelo.
+                Este simulador é educativo. Consulte as instruções
+                do seu medidor para confirmar o sentido dos ponteiros.
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

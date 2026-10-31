@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #0f766e;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.medidor {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.relogios {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.relogio-container {
+    min-width: 0;
+    text-align: center;
+    padding: 10px 4px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+}
+
+.relogio-container h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #475569;
+}
+
+.relogio {
+    display: block;
+    width: 100%;
+    max-width: 180px;
+    margin: 0 auto;
+    cursor: grab;
+    touch-action: none;
+    user-select: none;
+}
+
+.relogio:active {
+    cursor: grabbing;
+}
+
+.relogio:focus-visible {
+    outline: 3px solid #0f766e;
+    outline-offset: 3px;
+}
+
+.valor-ponteiro {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.resultado {
+    text-align: center;
+    background: #ecfdf5;
+    border: 1px solid #a7f3d0;
+    border-radius: 12px;
+    padding: 25px 15px;
+}
+
+.resultado h2 {
+    font-size: 18px;
+    color: #065f46;
+    margin-bottom: 10px;
+}
+
+.leitura {
+    font-size: clamp(36px, 8vw, 48px);
+    font-weight: bold;
+    letter-spacing: 6px;
+    color: #047857;
+    font-variant-numeric: tabular-nums;
+}
+
+.resultado p {
+    color: #64748b;
+    margin-top: 8px;
+}
+
+.mensagem {
+    margin-top: 18px;
+    padding: 12px;
+    background: white;
+    border-radius: 8px;
+    line-height: 1.5;
+    font-size: 14px;
+    color: #334155;
+}
+
+.acoes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #0f766e;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    min-height: 44px;
+}
+
+button:hover {
+    background: #115e59;
+}
+
+button:focus-visible {
+    outline: 3px solid #14b8a6;
+    outline-offset: 3px;
+}
+
+.instrucoes {
+    margin-top: 25px;
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+}
+
+.instrucoes h2 {
+    margin-bottom: 15px;
+    color: #0f766e;
+}
+
+.instrucoes ol {
+    padding-left: 22px;
+}
+
+.instrucoes li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.aviso {
+    margin-top: 20px;
+    padding: 12px;
+    border-left: 4px solid #f59e0b;
+    background: #fffbeb;
+    color: #92400e;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+@media (max-width: 500px) {
+    body {
+        padding: 10px;
+    }
+
+    .medidor,
+    .instrucoes {
+        padding: 15px 10px;
+    }
+
+    .relogios {
+        gap: 6px;
+    }
+
+    .relogio-container {
+        padding: 8px 2px;
+    }
+
+    .relogio-container h3 {
+        font-size: 11px;
+    }
+
+    .leitura {
+        letter-spacing: 3px;
+    }
+}
