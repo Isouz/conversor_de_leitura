@@ -118,7 +118,7 @@ function criarRelogio(indice) {
     ponteiro.setAttribute("y1", CENTRO);
     ponteiro.setAttribute("x2", CENTRO);
     ponteiro.setAttribute("y2", CENTRO - RAIO_PONTEIRO);
-    ponteiro.setAttribute("stroke", "#0f766e");
+    ponteiro.setAttribute("stroke", "#ff0000");
     ponteiro.setAttribute("stroke-width", "4");
     ponteiro.setAttribute("stroke-linecap", "round");
 
@@ -133,7 +133,7 @@ function criarRelogio(indice) {
     pino.setAttribute("cx", CENTRO);
     pino.setAttribute("cy", CENTRO);
     pino.setAttribute("r", "6");
-    pino.setAttribute("fill", "#0f766e");
+    pino.setAttribute("fill", "#ff0000");
 
     svg.appendChild(pino);
 
@@ -264,6 +264,18 @@ function atualizar() {
         "Leitura atualizada! Confira os ponteiros no medidor físico.";
 }
 
+// Gera uma lista com 4 números aleatórios
+function gerar_numeros() {
+    const lista = []
+
+    for (let i=0; i < 4; i++) {
+        let randomico = (Math.random() * 9).toFixed(0)
+        lista.push(randomico)
+    }
+
+    return lista  
+}
+
 // Reinicia os quatro ponteiros.
 btnReiniciar.addEventListener("click", () => {
     angulos = [2, 2, 2, 2];
@@ -273,9 +285,9 @@ btnReiniciar.addEventListener("click", () => {
         "Medidor reiniciado. Ajuste os ponteiros para começar.";
 });
 
-// Carrega uma leitura de exemplo: 3728.
+// Carrega uma leitura de exemplo.
 btnExemplo.addEventListener("click", () => {
-    const exemplo = [3, 7, 2, 8];
+    const exemplo = gerar_numeros();
 
     angulos = exemplo.map((digito) =>
         digito * ANGULO_POR_NUMERO + 5
